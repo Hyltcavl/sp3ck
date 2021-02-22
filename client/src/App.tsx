@@ -1,8 +1,15 @@
-import React from "react";
+import React, { useEffect } from "react";
 import logo from "./logo.svg";
 import "./App.css";
 
 function App() {
+  useEffect(() => {
+    fetch("/ping")
+      .then(response => response.json())
+      .then(data => {
+        alert(JSON.stringify(data));
+      });
+  }, []);
   return (
     <div className='App'>
       <header className='App-header'>
