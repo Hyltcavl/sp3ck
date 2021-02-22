@@ -1,10 +1,12 @@
 import { Application, Router } from "express";
-import { PingController } from "./controllers/PingController";
-import { IndexController } from "./controllers/IndexController";
+import { Ping } from "./controllers/Ping";
+import { Index } from "./controllers/Index";
+import { Picture } from "./controllers/Picture";
 
 const _routes: [string, Router][] = [
-  ["/", IndexController],
-  ["/ping", PingController],
+  ["/", Index],
+  ["/ping", Ping],
+  ["/picture", Picture],
 ];
 
 export const routes = (app: Application) => {

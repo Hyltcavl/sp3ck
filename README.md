@@ -7,3 +7,9 @@ https://dev.to/ornio/node-js-express-with-typescript-eslint-jest-prettier-and-hu
 
 And a splash of that:
 https://khalilstemmler.com/blogs/typescript/node-starter-project/
+
+### `npm test`
+
+runs tests
+
+### `npm test`
